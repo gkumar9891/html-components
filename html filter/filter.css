@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.dropdown .dropdown_parent {
+	padding: 12px;
+	background-color: #4CAF50;
+	color: white;
+    display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown .dropdown_content .filter .filter_item {
+	padding: 12px;
+	background-color: #f6f6f6;
+    display: block;
+	text-decoration: none;
+}
+
+.dropdown .dropdown_content .filter .filter_item:hover {
+	background-color: #ddd;
+}
+
+.dropdown {
+   display: inline-block;
+   position: relative;
+}
+
+.dropdown_content {
+	position: absolute;
+	width: 300px;
+	display: none;
+	z-index: 1;
+	border: 1px solid #ddd;
+}
+
+.dropdown .dropdown_content .filter input[type="text"] {
+	padding: 12px 12px 12px 40px;
+	width: 100%;
+	background: url("https://www.w3schools.com/howto/searchicon.png") no-repeat;
+	background-position: 12px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.active {
+	display: block;
+}

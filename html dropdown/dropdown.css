@@ -1,0 +1,39 @@
+.dropdown .dropdown_parent {
+	background-color: red;
+	padding: 15px;
+	color: white;
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dropdown .dropdown_content {
+	width: 10rem;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	display: none;
+}
+
+.dropdown .dropdown_child {
+	display: block;
+	padding: 15px;
+	cursor: pointer;
+	background-color: powderblue;
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown .dropdown_content .dropdown_child:hover {
+	background-color: tomato;
+}
+
+.dropdown:hover .dropdown_content {
+	background-color: powderblue;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.active {
+  display: block!important;
+}

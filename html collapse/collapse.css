@@ -1,0 +1,45 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.accordion_parent {
+	padding: 20px;
+	background-color: #eee;
+	cursor: pointer;
+	user-select: none;
+	outline: none;
+	border: none;
+}
+
+.accordion .accordion_item .accordion_child {
+	padding: 0px 20px;
+	
+    max-height: 0;
+	overflow: hidden;
+    transition: max-height 0.5s linear;
+}
+
+.accordion {
+	width: 50%;
+	margin: 20px auto;
+}
+
+.active, .accordion_parent:hover {
+	background-color: #ccc;
+}
+
+.accordion_parent::after {
+	content: '\02795';
+	float: right;
+	color: black;
+}
+
+.active::after {
+	content: '\02796';
+}
+
+
+
+

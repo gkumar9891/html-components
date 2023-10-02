@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="modal.css" />
+</head>
+<body>
+<div style="font-size: 2rem; margin-left: 30px"><b>Modal Login Form</b></div>
+<button onclick="hello()" style="background: lightgreen; border: none; padding: 12px; margin: 30px">Login</button>
+<section class="modal_form">
+    <form class="animate">
+	 <div class="modal_form_img">
+	     <img src="https://www.w3schools.com/howto/img_avatar2.png" />
+	 </div>
+	 
+	 <label for="uname"><b>Username</b></label>
+	 <input type="text" name="uname" placeholder="Enter Username" required />
+	 
+	 <label for="pwd"><b>Password</b></label>
+	 <input type="password" name="pwd" placeholder="Enter Password" required />
+	 
+	 <input type="submit" value="Login" />
+	 
+	 <input type="checkbox" checked>Remember Me
+	 
+	 <div class="modal_form_footer">
+	    <input type="button" onclick="closed()" class="cancel" value="cancel" />
+		<span style="float: right; margin-top: 12px;" >Forget <a href="#">password?</a></span>
+	 </div>
+	 <div class="close" onclick="closed()">&times;</div>
+	</form>
+</section>
+<script src="modal.js"></script>
+</body>
+</html>

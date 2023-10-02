@@ -1,0 +1,47 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.sidenav_active {
+    font-size: 2rem;
+	cursor: pointer;
+}
+
+.sidenav {
+	padding: 12px;
+}
+
+.sidenav_left {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: powderblue;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: width .4s linear
+}
+
+.sidenav_list_item {
+    display: block;
+	margin-bottom: 15px;
+	font-size: 2rem;
+	text-decoration: none;
+	color: white;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: white;
+	font-size: 2rem;
+    cursor: pointer;
+}
+
+.sidenav_list {
+	padding: 12px;
+}

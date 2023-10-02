@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="carousel.css" />
+</head>
+<body>
+<div class="carousel_container">
+   <div class="carousel_item fade">
+      <img src="img100.jpg" />
+	  <div class="caption">Caption</div>
+   </div>
+   
+   <div class="carousel_item fade">
+      <img src="img101.png" />
+	  <div class="caption">Caption</div>
+   </div>
+   
+   <div class="carousel_item fade">
+       <img src="img105.jpg" />
+	   <div class="caption">Caption</div>
+   </div>
+   
+   <div class="carousel_indicators">
+         <a href="#" class="left" onclick="plusSlide(-1)">&#10094;</a>
+		 <a href="#" class="right" onclick="plusSlide(1)">&#10095;</a>
+   </div>
+   
+   <div class="carousel_dots" style="text-align: center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+   </div>
+</div>
+<script src="carousel.js"></script>
+</body>
+</html>
